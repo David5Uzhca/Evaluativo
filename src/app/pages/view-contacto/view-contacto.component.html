@@ -1,0 +1,15 @@
+<form>
+    <label for="txtCedula">Cédula</label>-
+    {{persona.id}} {{persona.dni}}
+    <br>
+    <label for="txtCedula">Nombre</label>
+    {{persona.name}}
+    <br>
+    <label for="txtCedula">Apellido</label>
+    {{persona.lastname}}
+    <br>
+    <label for="txtCedula">Correo</label>
+    {{persona.email}}
+    <br>
+</form>
+<button (click)="goListar()">Listado</button>
