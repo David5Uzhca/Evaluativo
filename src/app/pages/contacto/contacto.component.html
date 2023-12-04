@@ -1,18 +1,19 @@
 <section class="list-container">
     <div class="form-container">
-        <h1 id=comentario class="titulos">Formulario</h1>
+        <h1 id=comentario class="titulos">Calificaciones</h1>
         <h6 class="subtitulos">Por favor, Llene el formulario</h6>
         <form id="survey-form" class="centrado">
             <label for="txtCedula" class="label">Ingrese su cedula:</label>
             <input type="text" class="form-control" id="txtCedula" name="txtCedula" [(ngModel)]="persona.id"/>
             <label for="txtCedula" class="label">Ingrese su nombre:</label>
             <input type="text" class="form-control" id="txtNombre" name="txtNombre" [(ngModel)]="persona.name"/>
-            <label for="txtCedula" class="label">Ingrese su apellido:</label>
-            <input type="text" class="form-control" id="txtApellido" name="txtApellido" [(ngModel)]="persona.lastname"/>
-            <label for="txtNombre" class="label">correo:</label>
-            <input type="text" class="form-control" id="txtCorreo" name="txtCorreo" [(ngModel)]="persona.email"/>
-            <button (click)="savePersona()" type="submit" class="btn">Enviar</button>
+            <label for="txtCedula" class="label">Ingrese su materia:</label>
+            <input type="text" class="form-control" id="txtMateria" name="txtMateria" [(ngModel)]="persona.signature"/>
+            <label for="txtNombre" class="label">Calificacion:</label>
+            <input type="text" class="form-control" id="txtCalificacion" name="txtCalificacion" [(ngModel)]="persona.grade"/>
+            <button (click)="savePersona()" type="submit" class="btn">Guardar</button>
             <button (click)="editarPersona()" type="submit" class="btn">Editar</button>
+            <button (click)="eliminarPersona()" type="submit" class="btn">Eliminar</button>
             <button (click)="goListar()" type="submit" class="btn">Listar</button>
     </form>
 </div>

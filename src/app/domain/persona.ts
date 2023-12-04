@@ -3,6 +3,6 @@ export class Persona {
     id?: string;
     dni?: string;
     name?: string;
-    lastname?: string;
-    email?: string;
+    signature?: string;
+    grade?: string;
 }

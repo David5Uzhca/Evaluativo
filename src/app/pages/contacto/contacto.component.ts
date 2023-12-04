@@ -26,6 +26,8 @@ export class ContactoComponent {
   editarPersona(){
 
   }
+
+  eliminarPersona(){}
   savePersona(){
     this.contactoServices.addContacto(this.persona)
     console.log('contacots', this.contactoServices.getContactos())
